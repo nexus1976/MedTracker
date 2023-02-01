@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "closure #1 in closure #1 in closure #1 in closure #1 in ContentView.body.getter:ContentView.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ContentView.updateData(localDate:):ContentView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "localEntry?.halfDose1">
+            </PersistentString>
+            <PersistentString
+               value = "localEntry!.halfDose1">
+            </PersistentString>
+            <PersistentString
+               value = "medEntryDose1">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ContentView.hydrateData(localDate:):ContentView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "localDate">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ContentView.setFormData():ContentView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectedDate">
+            </PersistentString>
+            <PersistentString
+               value = "entryItem.halfDose1">
+            </PersistentString>
+            <PersistentString
+               value = "medEntryDose1">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

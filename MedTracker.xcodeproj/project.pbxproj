@@ -16,6 +16,7 @@
 		8AA57AEB2987699E00D9606F /* MedTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA57AEA2987699E00D9606F /* MedTrackerTests.swift */; };
 		8AA57AF52987699F00D9606F /* MedTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA57AF42987699F00D9606F /* MedTrackerUITests.swift */; };
 		8AA57AF72987699F00D9606F /* MedTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA57AF62987699F00D9606F /* MedTrackerUITestsLaunchTests.swift */; };
+		8AA57B042987820500D9606F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA57B032987820500D9606F /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,18 +37,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A7473A32988AA3D00D39A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8AA57AD12987699D00D9606F /* MedTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AA57AD42987699D00D9606F /* MedTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedTrackerApp.swift; sourceTree = "<group>"; };
 		8AA57AD62987699D00D9606F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8AA57AD82987699E00D9606F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AA57ADB2987699E00D9606F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		8AA57ADD2987699E00D9606F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		8AA57ADD2987699E00D9606F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		8AA57AE02987699E00D9606F /* MedTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MedTracker.xcdatamodel; sourceTree = "<group>"; };
 		8AA57AE62987699E00D9606F /* MedTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AA57AEA2987699E00D9606F /* MedTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedTrackerTests.swift; sourceTree = "<group>"; };
 		8AA57AF02987699E00D9606F /* MedTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AA57AF42987699F00D9606F /* MedTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedTrackerUITests.swift; sourceTree = "<group>"; };
 		8AA57AF62987699F00D9606F /* MedTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8AA57B032987820500D9606F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,12 +101,14 @@
 		8AA57AD32987699D00D9606F /* MedTracker */ = {
 			isa = PBXGroup;
 			children = (
+				8A7473A32988AA3D00D39A48 /* Info.plist */,
 				8AA57AD42987699D00D9606F /* MedTrackerApp.swift */,
 				8AA57AD62987699D00D9606F /* ContentView.swift */,
 				8AA57AD82987699E00D9606F /* Assets.xcassets */,
 				8AA57ADD2987699E00D9606F /* Persistence.swift */,
 				8AA57ADF2987699E00D9606F /* MedTracker.xcdatamodeld */,
 				8AA57ADA2987699E00D9606F /* Preview Content */,
+				8AA57B032987820500D9606F /* Extensions.swift */,
 			);
 			path = MedTracker;
 			sourceTree = "<group>";
@@ -263,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AA57B042987820500D9606F /* Extensions.swift in Sources */,
 				8AA57ADE2987699E00D9606F /* Persistence.swift in Sources */,
 				8AA57AE12987699E00D9606F /* MedTracker.xcdatamodeld in Sources */,
 				8AA57AD72987699D00D9606F /* ContentView.swift in Sources */,
@@ -353,6 +359,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_PREPROCESS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -407,6 +416,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_PREPROCESS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -428,7 +440,7 @@
 				DEVELOPMENT_TEAM = XQ7GB449N8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = MedTracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -457,7 +469,7 @@
 				DEVELOPMENT_TEAM = XQ7GB449N8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = MedTracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

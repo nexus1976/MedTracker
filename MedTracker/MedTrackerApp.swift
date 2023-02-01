@@ -9,12 +9,19 @@ import SwiftUI
 
 @main
 struct MedTrackerApp: App {
-    let persistenceController = PersistenceController.shared
+    @StateObject var persistenceController = PersistenceController()
 
+    /*
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+        }
+    }
+     */
+    var body: some Scene {
+        WindowGroup {
+            ContentView(viewContext: persistenceController.container.viewContext)
         }
     }
 }
